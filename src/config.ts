@@ -1,8 +1,3 @@
-// Klientų konfigūracijos failas — keičiant klientą, redaguok TIK ŠĮ failą.
-// Tikrus analytics ID'us dėk į .env (žr. .env.example).
-
-// --- Tipų apibrėžimai ---
-
 export interface SocialLinks {
   facebook?: string;
   instagram?: string;
@@ -10,9 +5,9 @@ export interface SocialLinks {
 }
 
 export interface AnalyticsConfig {
-  gaId?: string;        // Google Analytics 4 Measurement ID (G-XXXXXXXXXX)
-  metaPixelId?: string; // Meta (Facebook) Pixel ID
-  gtmId?: string;       // Google Tag Manager Container ID (GTM-XXXXXXX)
+  gaId?: string;
+  metaPixelId?: string;
+  gtmId?: string;
 }
 
 export interface SiteConfig {
@@ -30,29 +25,25 @@ export interface SiteConfig {
   ogImage: string;
 }
 
-// --- Analytics ID'ai iš .env ---
-// PUBLIC_ prefiksas — Astro taisyklė: tik PUBLIC_ kintamieji pasiekiami naršyklėje.
-// Jei kintamasis nenustatytas, analytics tiesiog neįkeliamas (nėra klaidos).
 const analyticsConfig: AnalyticsConfig = {
   gaId: import.meta.env.PUBLIC_GA_ID,
   metaPixelId: import.meta.env.PUBLIC_META_PIXEL_ID,
   gtmId: import.meta.env.PUBLIC_GTM_ID,
 };
 
-// --- Innomode konfigūracija (placeholder'iai — tikrus duomenis įrašyk čia) ---
 const config: SiteConfig = {
-  siteName: "Innomode",
-  siteUrl: "https://innomode.lt",
+  siteName: "Greita Lapė",
+  siteUrl: "https://greitalape.lt",
   siteDescription:
-    "Profesionalūs elektrinių skydų sprendimai pramonei ir statybai Lietuvoje. Kokybė, patikimumas, greitis.",
+    "MB Greita Lapė — vidaus ir išorės apdailos specialistai. Profesionalus glaistymas, dažymas, fasadų šiltinimas ir gipso kartono darbai visoje Lietuvoje. Greitai, tiksliai, aukštos kokybės.",
 
-  companyName: "Innomode UAB",
-  companyEmail: "info@innomode.lt",
+  companyName: "MB GREITA LAPĖ",
+  companyEmail: "info@greitalape.lt",
   companyPhone: "+370 600 00000",
-  companyAddress: "Gedimino pr. 1, Vilnius, Lietuva",
+  companyAddress: "Lietuva",
 
   socialLinks: {
-    facebook: "https://facebook.com/innomode",
+    facebook: "",
     instagram: "",
     linkedin: "",
   },
@@ -62,7 +53,7 @@ const config: SiteConfig = {
   defaultLocale: "lt",
   supportedLocales: ["lt"],
 
-  ogImage: "/images/og-default.jpg",
+  ogImage: "/vidaus apdaila2.webp",
 };
 
 export default config;
