@@ -39,10 +39,10 @@ import config from '../config';
   <section id="apie" class="gl-about">
     <div class="gl-container">
       <div class="gl-about-grid">
-        <h2 class="gl-about-heading">
+        <h2 class="gl-about-heading" data-animate>
           Apdailos ekspertai,<br />kuriais galite<br />pasitikėti
         </h2>
-        <div class="gl-about-right">
+        <div class="gl-about-right" data-animate data-delay="150">
           <p class="gl-about-text">
             MB GREITA LAPĖ – tai vidaus ir išorės apdailos specialistai, kurie dirba greitai, tiksliai ir itin kokybiškai. Mūsų pagrindinis tikslas – užtikrinti nepriekaištingą rezultatą, naudojant modernias technologijas, mechanizuotus darbo metodus ir aukštos kokybės medžiagas.
           </p>
@@ -57,8 +57,8 @@ import config from '../config';
     <div class="gl-container">
 
       <div class="gl-services-intro">
-        <h2 class="gl-services-heading">Mūsų paslaugos</h2>
-        <div class="gl-services-intro-right">
+        <h2 class="gl-services-heading" data-animate>Mūsų paslaugos</h2>
+        <div class="gl-services-intro-right" data-animate data-delay="150">
           <p class="gl-services-desc">
             Teikiame pilną vidaus ir išorės apdailos paslaugų spektrą — nuo sienų glaistymo iki fasadų šiltinimo ir dekoratyvinių sprendimų.
           </p>
@@ -68,29 +68,25 @@ import config from '../config';
 
       <div class="gl-services-grid">
 
-        <div class="gl-service-item">
-          <!-- Pakeiskite į tikrą nuotrauką: style="background-image: url('/images/service-vidaus.jpg');" -->
+        <div class="gl-service-item" data-animate data-delay="0">
           <div class="gl-service-img gl-service-img-1"></div>
           <p class="gl-service-name">Vidaus apdaila</p>
           <p class="gl-service-sub">Glaistymas, dažymas, dekoratyviniai sprendimai</p>
         </div>
 
-        <div class="gl-service-item">
-          <!-- Pakeiskite į tikrą nuotrauką: style="background-image: url('/images/service-isores.jpg');" -->
+        <div class="gl-service-item" data-animate data-delay="120">
           <div class="gl-service-img gl-service-img-2"></div>
           <p class="gl-service-name">Išorės apdaila</p>
           <p class="gl-service-sub">Fasadų šiltinimas, tinkavimas, dažymas</p>
         </div>
 
-        <div class="gl-service-item">
-          <!-- Pakeiskite į tikrą nuotrauką: style="background-image: url('/images/service-gipsas.jpg');" -->
+        <div class="gl-service-item" data-animate data-delay="240">
           <div class="gl-service-img gl-service-img-3"></div>
           <p class="gl-service-name">Gipso kartonas</p>
           <p class="gl-service-sub">Pertvarų, lubų ir nišų montavimas</p>
         </div>
 
-        <div class="gl-service-item">
-          <!-- Pakeiskite į tikrą nuotrauką: style="background-image: url('/images/service-mechanizuoti.jpg');" -->
+        <div class="gl-service-item" data-animate data-delay="360">
           <div class="gl-service-img gl-service-img-4"></div>
           <p class="gl-service-name">Mechanizuoti sprendimai</p>
           <p class="gl-service-sub">Moderni įranga — greitis ir tikslumas</p>
@@ -106,22 +102,22 @@ import config from '../config';
     <div class="gl-cta-bg"></div>
     <div class="gl-cta-overlay"></div>
     <div class="gl-cta-content">
-      <h2 class="gl-cta-heading">
+      <h2 class="gl-cta-heading" data-animate>
         Pasiruošę pradėti<br />savo projektą?
       </h2>
-      <a href="#susisiekti" class="gl-cta-btn">Susisiekti</a>
+      <a href="#susisiekti" class="gl-cta-btn" data-animate data-delay="200">Susisiekti</a>
     </div>
   </section>
 
   <!-- ===== KODĖL MES ===== -->
   <section class="gl-why">
     <div class="gl-container">
-      <h2 class="gl-why-heading">Kodėl rinktis mus</h2>
+      <h2 class="gl-why-heading" data-animate>Kodėl rinktis mus</h2>
 
       <div class="gl-why-list">
 
         <!-- Kortelė 01 -->
-        <div class="gl-why-card">
+        <div class="gl-why-card" data-animate data-delay="0">
           <div class="gl-why-text">
             <span class="gl-why-num">01</span>
             <h3 class="gl-why-title">Greitas ir efektyvus darbas</h3>
@@ -133,7 +129,7 @@ import config from '../config';
         </div>
 
         <!-- Kortelė 02 -->
-        <div class="gl-why-card">
+        <div class="gl-why-card" data-animate data-delay="150">
           <div class="gl-why-text">
             <span class="gl-why-num">02</span>
             <h3 class="gl-why-title">Aukšta ir pastovi kokybė</h3>
@@ -145,7 +141,7 @@ import config from '../config';
         </div>
 
         <!-- Kortelė 03 -->
-        <div class="gl-why-card">
+        <div class="gl-why-card" data-animate data-delay="300">
           <div class="gl-why-text">
             <span class="gl-why-num">03</span>
             <h3 class="gl-why-title">Ilgaamžiai ir estetiški rezultatai</h3>
@@ -167,9 +163,9 @@ import config from '../config';
 
         <!-- Kairė: kontaktų informacija -->
         <div class="gl-contact-info">
-          <h2 class="gl-contact-heading">Susisiekite</h2>
+          <h2 class="gl-contact-heading" data-animate>Susisiekite</h2>
 
-          <div class="gl-contact-details">
+          <div class="gl-contact-details" data-animate data-delay="120">
             <div class="gl-contact-item">
               <p class="gl-contact-label">El. paštas</p>
               <a href={`mailto:${config.companyEmail}`} class="gl-contact-value gl-contact-link">
@@ -194,7 +190,7 @@ import config from '../config';
         </div>
 
         <!-- Dešinė: kontaktų forma -->
-        <div class="gl-contact-form-wrap">
+        <div class="gl-contact-form-wrap" data-animate data-delay="250">
           <h3 class="gl-contact-form-title">Parašykite mums</h3>
           <form
             name="kontaktai"
@@ -247,6 +243,33 @@ import config from '../config';
   }
   @media (min-width: 1024px) {
     .gl-container { padding: 0 2.5rem; }
+  }
+
+  /* ── ANIMACIJOS ─────────────────────────────────────── */
+  @keyframes gl-rise {
+    from { opacity: 0; transform: translateY(32px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .gl-hero-title {
+    animation: gl-rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .gl-hero-tagline {
+    animation: gl-rise 1s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
+  }
+  .gl-hero-cta-circle {
+    animation: gl-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+  }
+
+  [data-animate] {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  [data-animate].in-view {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   /* ── HERO ────────────────────────────────────────────── */
@@ -660,3 +683,22 @@ import config from '../config';
   }
   .gl-contact-submit:hover { background: #1A0E05; }
 </style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target as HTMLElement;
+          const delay = el.dataset.delay ?? '0';
+          el.style.transitionDelay = delay + 'ms';
+          el.classList.add('in-view');
+          observer.unobserve(el);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  document.querySelectorAll('[data-animate]').forEach((el) => observer.observe(el));
+</script>
